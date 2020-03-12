@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+form{
+    width: 70%;
+    margin: auto;
+}
+input[type=text], select, input[type=date], input[type=password], input[type=email]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=reset], input[type=submit]{
+    margin: 10px;
+    background-color: #FFFFFF;
+    color: #4CAF50;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+#btn {
+    transition-duration: 0.4s;
+}
+#btn:hover {
+    background-color: #8e45a0;
+    color: white;
+}
+input[type=submit]:hover {
+  background-color: #8e45a0;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: rgba(215, 180, 195, 0.5);
+  padding: 20px;
+  width: 65%;
+  margin: auto;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+legend {
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+  }
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+}
+}
+body{
+    background-image: url("bg2.jpg");
+}
+#topbar{
+  overflow: hidden;
+  background-color: rgb(6, 1, 12);
+  
+}
+#topbar a{
+  display: block;
+  float: left;
+  color: #F2F2F2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#topbar a:hover{
+  background-color: #DDD;
+  color: #000;
+}
+#topbar a.active{
+  background-color: deepskyblue;
+  color: #FFF;
+}
